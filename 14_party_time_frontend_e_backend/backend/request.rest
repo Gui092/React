@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+  {
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6a147bdb54aeb9579fa462b2
+
+###
+DELETE http://localhost:3000/api/services/6a147bdb54aeb9579fa462b2
+
+###
+PUT http://localhost:3000/api/services/6a147eb3e2eb0ec6560ff3b6
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Guilherme",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {   
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {   
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6a1494ebe2647efd0689ecc3
+
+###
+DELETE http://localhost:3000/api/parties/6a1494ebe2647efd0689ecc2
+
+###
+PUT http://localhost:3000/api/parties/6a1495e731f48bdead455e1c
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Guilherme",
+    "description": "Uma festa de aniversário",
+    "budget": 1000,
+    "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {   
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {   
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_vector-1682299666311-ef9c9836ae60?q=80&w=1068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
